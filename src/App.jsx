@@ -11,10 +11,10 @@ function App() {
     fetcher(url, { headers })
   );
 
-  if (error) return <div>Failed to load</div>;
+  if (error) return <div>Failed to load.</div>;
   if (isLoading) return <div>Loading...</div>;
 
-  return <>{data && <p>Status : OK</p>}</>;
+  return <>{data && <p>Status: OK</p>}</>;
 }
 
 export default App;
