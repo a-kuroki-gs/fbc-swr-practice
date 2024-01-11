@@ -11,8 +11,8 @@ function App() {
     fetcher(url, { headers })
   );
 
-  if (error) return <div>Failed to load.</div>;
-  if (isLoading) return <div>Loading...</div>;
+  if (error) return <p>Failed to load.</p>;
+  if (isLoading) return <p>Loading...</p>;
 
   return <>{data && <p>Status: OK</p>}</>;
 }
